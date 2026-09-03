@@ -21,9 +21,9 @@ def main():
 
         try:
             d = int(input("Enter your D: "))
+            i = int(input("Enter your I: "))
         except ValueError:
             break
-        i = int(input("Enter your I: "))
 
         if d >= 2:
             final = score(d, i)
