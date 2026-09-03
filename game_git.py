@@ -19,7 +19,10 @@ def main():
         # Ask the user for their D
         print("To exit, enter number less than 2, or press Enter")
 
-        d = int(input("Enter your D: "))
+        try:
+            d = int(input("Enter your D: "))
+        except ValueError:
+            break
         i = int(input("Enter your I: "))
 
         if d >= 2:
