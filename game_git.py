@@ -8,7 +8,6 @@ def score(d, i=10, total=0):
     # Stop recursion when D reaches 1
     if d == 1:
         print(f"Your final score: {total}")
-
         return total
 
     return score(d - 1, round(i * 1.2), total)
@@ -19,10 +18,12 @@ def main():
     while not pressed:
         # Ask the user for their D
         print("To exit, enter number less than 2, or press Enter")
+
         d = int(input("Enter your D: "))
+        i = int(input("Enter your I: "))
 
         if d >= 2:
-            final = score(d)
+            final = score(d, i)
 
             # Only check qualification if D is at least 4   
             if d >= 4:
