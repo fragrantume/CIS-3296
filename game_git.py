@@ -1,8 +1,10 @@
+import csv 
+
 def score(d, i=10, total=0):
     # Add current score to total
     total += i
 
-    # Print currect score 
+    # Print c
     print(i)
 
     # Stop recursion when D reaches 1
@@ -13,6 +15,14 @@ def score(d, i=10, total=0):
     return score(d - 1, round(i * 1.2), total)
 
 def main():
+
+    teams = []
+
+    with open('hackathon_teams.csv', 'r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            teams.append(row)
+
     pressed = False
 
     while not pressed:
