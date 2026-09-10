@@ -1,5 +1,13 @@
-import csv 
+from csv import DictReader 
 
+def load_csv_data(filename):
+    teams = [] 
+    with open('hackathon_teams.csv', 'r') as file:
+        reader =DictReader(file)
+        for row in reader:
+            teams.append(row)
+
+    return teams
 def score(d, i=10, total=0):
     # Add current score to total
     total += i
@@ -15,14 +23,10 @@ def score(d, i=10, total=0):
     return score(d - 1, round(i * 1.2), total)
 
 def main():
+    # Parse the CSV file to get the teams data 
+    teams = load_csv_data('hackathon_teams.csv')
 
-    teams = []
-
-    with open('hackathon_teams.csv', 'r') as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            teams.append(row)
-
+    print(teams)
     pressed = False
 
     while not pressed:
