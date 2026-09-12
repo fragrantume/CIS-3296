@@ -29,6 +29,8 @@ MIN_ROUNDS = 4
 MAX_ROUNDS = 10
 
 def main():
+    teams = load_teams(DATA_FILE)
+
     while True:
         show_menu()
         choice = input("\nEnter your choice: ").strip()
