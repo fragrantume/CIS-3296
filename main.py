@@ -1,4 +1,4 @@
-from data import load_teams, save_teams
+from data import load_teams, save_teams, view_teams, add_team, update_team
 
 def ask_round():
     while True:
@@ -36,17 +36,21 @@ def main():
         choice = input("\nEnter your choice: ").strip()
 
         if choice == "1":
-            pass  # view_teams(teams) - issue #9
+            view_teams(teams)  # view_teams(teams) - issue #9
+
         elif choice == "2":
-            pass  # add_team(teams) - issue #9
+            add_team(teams)  # add_team(teams) - issue #9
             save_teams(DATA_FILE, teams)
+
         elif choice == "3":
-            pass  # update_team(teams) - issue #9
+            update_team(teams)  # update_team(teams) - issue #9
             save_teams(DATA_FILE, teams)
+
         elif choice == "4":
             d = ask_round()
             if d is not None:
                 pass  # show_leaderboard(teams, d) - issue #3
+
         elif choice == "5":
             print("Bye bye!")
             break
