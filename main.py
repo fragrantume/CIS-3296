@@ -1,4 +1,5 @@
-from data import load_teams, save_teams, view_teams, add_team, update_team
+from data import load_teams, save_teams
+from records import view_teams, add_team, update_team
 
 def ask_round():
     while True:
