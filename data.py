@@ -81,7 +81,7 @@ def update_team(teams):
             initial_score = updated_team['initial_score']
             break
         try:
-            initial_score = int(initial_score_input)
+            initial_score = float(initial_score_input)
             break
         except ValueError:
             print("Invalid input. Please enter a number for the initial score.")
