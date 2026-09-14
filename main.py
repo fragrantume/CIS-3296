@@ -1,5 +1,10 @@
 from data import load_teams, save_teams
 from records import view_teams, add_team, update_team
+from leaderboard import show_leaderboard
+
+DATA_FILE = "hackathon_teams.csv"
+MIN_ROUNDS = 4
+MAX_ROUNDS = 10
 
 def ask_round():
     while True:
@@ -25,10 +30,6 @@ def show_menu():
     print("4. Show leaderboard")
     print("5. Quit")
 
-DATA_FILE = "hackathon_teams.csv"
-MIN_ROUNDS = 4
-MAX_ROUNDS = 10
-
 def main():
     teams = load_teams(DATA_FILE)
 
@@ -37,20 +38,20 @@ def main():
         choice = input("\nEnter your choice: ").strip()
 
         if choice == "1":
-            view_teams(teams)  # view_teams(teams) - issue #9
+            view_teams(teams)
 
         elif choice == "2":
-            add_team(teams)  # add_team(teams) - issue #9
+            add_team(teams)
             save_teams(DATA_FILE, teams)
 
         elif choice == "3":
-            update_team(teams)  # update_team(teams) - issue #9
+            update_team(teams)
             save_teams(DATA_FILE, teams)
 
         elif choice == "4":
             d = ask_round()
             if d is not None:
-                pass  # show_leaderboard(teams, d) - issue #3
+                show_leaderboard(teams, d)
 
         elif choice == "5":
             print("Bye bye!")
