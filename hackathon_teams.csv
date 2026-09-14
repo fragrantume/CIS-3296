@@ -1,10 +1,11 @@
 university,team_name,initial_score,growth_rate
-Temple University Japan,TUJ AI,10,1.40
-The University of Tokyo,UTokyo AI Lab,12,1.30
-University College London,UCL Computing,15,1.20
-University of Melbourne,Melbourne Data,15,1.20
-National University of Singapore,NUS AI,8,1.60
-Carnegie Mellon University,CMU Systems,20,1.10
-University of Toronto,UofT Intelligence,14,1.25
-KAIST,KAIST FutureLab,9,1.55
-Technical University of Munich,TUM Innovators,16,1.20
+Temple University Japan,TUJ AI,10.0,1.4
+The University of Tokyo,UTokyo AI Lab,12.0,1.3
+University College London,UCL Computing,15.0,1.2
+University of Melbourne,Melbourne Data,15.0,1.2
+National University of Singapore,NUS AI,8.0,1.6
+Carnegie Mellon University,CMU Systems,20.0,1.1
+University of Toronto,UofT Intelligence,14.0,1.25
+KAIST,KAIST FutureLab,9.0,1.55
+Technical University of Munich,TUM Innovators,16.0,1.2
+Penn State University,Lions,13.0,1.4
