@@ -1,4 +1,4 @@
-# CIS-3296 - Number Game
+# CIS-3296 - Hackathon Team Manager
 
 ## Purpose
 To run a simulation of an AI hackathon that will display a leaderboard for several university teams. The program reads the provided hackathon_teams.csv and allows the user to manage the participating teams, pick a number of rounds and run a simulation of a game to see what teams qualify and dont qualify. 
